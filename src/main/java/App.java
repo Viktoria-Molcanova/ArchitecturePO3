@@ -22,7 +22,7 @@ public class App {
 
 		System.out.println("\nУборочная машина:");
 		harverster.drive();
-		System.out.println("Попытка заправки на станции, где нет дизельного топлива:");
+		System.out.println("Попытка заправки на станции,нет ДТ:");
 		harverster.fuel(gasGasStation);
 		harverster.wipe(gasGasStation, WipablePart.LIGHTS, WipablePart.MIRROR);
 		System.out.println("Стоимость обслуживания: " + calcMaintenance(harverster));
@@ -32,7 +32,6 @@ public class App {
 		sportCar.fuel(gasGasStation);
 		sportCar.wipe(gasGasStation, WipablePart.MIRROR, WipablePart.WINDSHIELD, WipablePart.LIGHTS);
 		sportCar.drive();
-		sportCar.wipe(uniGasStation, WipablePart.MIRROR, WipablePart.WINDSHIELD, WipablePart.LIGHTS);
 		System.out.println("Стоимость обслуживания: " + calcMaintenance(sportCar));
 
 		System.out.println("\nЛетающая машина:");
@@ -40,7 +39,6 @@ public class App {
 		flyingCar.fuel(gasGasStation);
 		flyingCar.wipe(gasGasStation, WipablePart.MIRROR, WipablePart.WINDSHIELD, WipablePart.LIGHTS);
 		flyingCar.drive();
-		flyingCar.wipe(uniGasStation, WipablePart.MIRROR, WipablePart.WINDSHIELD, WipablePart.LIGHTS);
 		System.out.println("Стоимость обслуживания  " + calcMaintenance(flyingCar));
 	}
 
